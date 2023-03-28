@@ -22,7 +22,7 @@
         margin: 0;
       }
 
-      main p {
+      footer p {
         font-size: 1.55rem;
         padding-left: 1.1rem;
         text-indent: -1.1rem;
@@ -53,57 +53,58 @@
         border-bottom: 1px solid black;
       }
 
-      td:first-child {
-        text-align: left;
-      }
-
-      td:last-child {
-        text-align: right;
-      }
-
-      table:first-of-type {
-        border-top: 30px solid black;
-      }
-
-      table:first-of-type th {
-        text-align: left;
-        padding: 10px 0;
-      }
-
-      table:first-of-type td {
-        padding: 5px 0;
-      }
-
-      table:nth-child(2) .subcategory td:first-child {
-        padding-left: 11px;
-        border: 0;
-      }
-
-      table:last-child {
+      footer > table {
         font-size: 1.4rem;
         border: 0;
+        margin-bottom: 10px;
       }
 
-      table:last-child tr {
-        border: 0;
-      }
-
-      table:last-child tr:first-child {
-        border-bottom: 1px solid black;
-      }
-
-      table:last-child .subcategory td:first-child {
-        text-indent: 2rem;
-      }
-
-      table:last-child td {
+      footer > table td {
         width: 15%;
         border: 0;
         text-align: left;
       }
 
-      table:last-child td:nth-child(2) {
+      td:first-child {
+        text-align: left;
+      }
+
+      figure > table:first-of-type {
+        border-top: 30px solid black;
+      }
+
+      figure > table:first-of-type th {
+        text-align: left;
+        padding: 10px 0;
+      }
+
+      figure > table:first-of-type td {
+        padding: 5px 0;
+      }
+
+      footer > table tr {
+        border: 0;
+      }
+
+      footer > table tr:first-child {
+        border-bottom: 1px solid black;
+      }
+
+      figure > table td:last-child {
+        text-align: right;
+      }
+
+      footer > table td:nth-child(2) {
         text-align: center;
+      }
+
+      footer > table .subcategory td:first-child {
+        text-indent: 2rem;
+      }
+
+      table:nth-child(3) .subcategory td:first-child {
+        padding-left: 11px;
+        border: 0;
       }
     </style>
   </head>
@@ -116,83 +117,84 @@
         <p>Servings Per Container About 8</p>
       </header>
 
-      <main>
-        <table>
-          <tr>
-            <th colspan="2">Amount Per Serving</th>
-            <th></th>
-          </tr>
-          <tr>
-            <td><strong>Calories</strong> 230</td>
-            <td>Calories from Fat 40</td>
-          </tr>
-        </table>
+      <table>
+        <tr>
+          <th colspan="2">Amount Per Serving</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><strong>Calories</strong> 230</td>
+          <td></td>
+          <td>Calories from Fat 40</td>
+        </tr>
+      </table>
 
-        <table>
-          <tr>
-            <th colspan="3">% Daily Value*</th>
-          </tr>
-          <tr>
-            <td colspan="2"><strong>Total Fat</strong> 8g</td>
-            <td><strong>12%</strong></td>
-          </tr>
-          <tr class="subcategory">
-            <td></td>
-            <td>Saturated Fat 1g</td>
-            <td><strong>5%</strong></td>
-          </tr>
-          <tr class="subcategory">
-            <td></td>
-            <td><em>Trans</em> Fat 0g</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td colspan="2"><strong>Cholesterol</strong> 0mg</td>
-            <td><strong>0%</strong></td>
-          </tr>
-          <tr>
-            <td colspan="2"><strong>Sodium</strong> 160mg</td>
-            <td><strong>7%</strong></td>
-          </tr>
-          <tr>
-            <td colspan="2"><strong>Total Carbohydrate</strong> 37g</td>
-            <td><strong>12%</strong></td>
-          </tr>
-          <tr class="subcategory">
-            <td></td>
-            <td>Dietary Fiber 4g</td>
-            <td><strong>16%</strong></td>
-          </tr>
-          <tr class="subcategory">
-            <td></td>
-            <td>Sugars 1g</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td colspan="2"><strong>Protein</strong> 3g</td>
-            <td></td>
-          </tr>
-        </table>
+      <table>
+        <tr>
+          <th colspan="3">% Daily Value*</th>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Total Fat</strong> 8g</td>
+          <td><strong>12%</strong></td>
+        </tr>
+        <tr class="subcategory">
+          <td></td>
+          <td>Saturated Fat 1g</td>
+          <td><strong>5%</strong></td>
+        </tr>
+        <tr class="subcategory">
+          <td></td>
+          <td><em>Trans</em> Fat 0g</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Cholesterol</strong> 0mg</td>
+          <td><strong>0%</strong></td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Sodium</strong> 160mg</td>
+          <td><strong>7%</strong></td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Total Carbohydrate</strong> 37g</td>
+          <td><strong>12%</strong></td>
+        </tr>
+        <tr class="subcategory">
+          <td></td>
+          <td>Dietary Fiber 4g</td>
+          <td><strong>16%</strong></td>
+        </tr>
+        <tr class="subcategory">
+          <td></td>
+          <td>Sugars 1g</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Protein</strong> 3g</td>
+          <td></td>
+        </tr>
+      </table>
 
-        <table>
-          <tr>
-            <td>Vitamin A</td>
-            <td>10%</td>
-          </tr>
-          <tr>
-            <td>Vitamin C</td>
-            <td>8%</td>
-          </tr>
-          <tr>
-            <td>Calcium</td>
-            <td>20%</td>
-          </tr>
-          <tr>
-            <td>Iron</td>
-            <td>45%</td>
-          </tr>
-        </table>
+      <table>
+        <tr>
+          <td>Vitamin A</td>
+          <td>10%</td>
+        </tr>
+        <tr>
+          <td>Vitamin C</td>
+          <td>8%</td>
+        </tr>
+        <tr>
+          <td>Calcium</td>
+          <td>20%</td>
+        </tr>
+        <tr>
+          <td>Iron</td>
+          <td>45%</td>
+        </tr>
+      </table>
 
+      <footer>
         <p>
           * Percent Daily Values are bassed on a 2,000 calorie diet.
             Your daily value may be higher or lower depending on your
@@ -243,7 +245,7 @@
             <td>30g</td>
           </tr>
         </table>
-      </main>
+      </footer>
     </figure>
   </body>
 </html>
