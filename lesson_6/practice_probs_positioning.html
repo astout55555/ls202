@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- linthtml-configure tag-bans="false" -->
+<html lang="en-US">
+  <head>
+    <title>title goes here</title>
+    <meta charset="utf-8">
+    <style>
+      /* border-box reset */
+      /* html {
+        box-sizing: border-box;
+      }
+
+      *, *::after, *::before {
+        box-sizing: inherit;
+      } */
+
+      header {
+        position: fixed;
+        width: 400px;
+        background-color: green;
+        text-align: center;
+        margin-left: -200px;
+        left: 50%;
+        top: 30px;
+        z-index: 3;
+      }
+
+      .between {
+        background-color: rgba(0, 0, 0, .6);
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        position: fixed;
+        top: 0;
+      }
+
+      .outside {
+        top: -10px;
+        left: -10px;
+        background-color: pink;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="outside"></div>
+      <h1>I'm positioned!</h1>
+    </header>
+    <div class="between"></div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus viverra libero gravida congue. Etiam porttitor volutpat nunc aliquam commodo. Etiam enim nunc, rhoncus et pulvinar eu, euismod pretium risus. Nulla egestas imperdiet neque quis eleifend. Morbi fermentum lectus pulvinar ultricies finibus. Suspendisse hendrerit tempor massa, non accumsan risus laoreet at. Mauris vel rutrum quam. Nam viverra feugiat eros, in auctor erat tristique non. Maecenas nibh sapien, porta quis gravida eu, convallis at nulla. Vivamus feugiat non elit non imperdiet. Pellentesque lacinia lectus leo.
+    </p>
+    <p>
+      Duis ornare bibendum nisi. Donec auctor ac ante eget semper. Phasellus vitae vehicula enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sit amet risus tincidunt, pellentesque dui nec, pharetra sem. Vestibulum rutrum imperdiet fermentum. Nunc maximus enim vitae tortor vehicula finibus. In mollis turpis sit amet ex vehicula, non bibendum dolor ultricies. Pellentesque nec lacus nec nibh condimentum condimentum ac sit amet velit. Curabitur gravida diam ante, bibendum aliquam ipsum ullamcorper vel. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer massa odio, semper eget augue et, tempus gravida urna. Fusce ullamcorper mi a convallis posuere. Phasellus enim ex, consectetur non nunc in, accumsan venenatis elit.
+    </p>
+    <p>
+      Aliquam condimentum semper orci, eu efficitur ante iaculis a. Proin ullamcorper rhoncus erat ut dapibus. Aenean eu nibh vehicula, tristique diam vitae, consectetur velit. Aliquam erat volutpat. Curabitur suscipit massa quis massa pulvinar, vitae dapibus massa feugiat. Quisque gravida odio ut facilisis feugiat. Nulla nulla diam, convallis id felis quis, fringilla tincidunt justo. Suspendisse id nisi non nisl tincidunt elementum. Donec consequat luctus pellentesque. Donec dignissim mauris a dolor elementum euismod.
+    </p>
+    <p>
+      Nulla facilisi. Nullam sodales egestas viverra. Nunc tempor mi eget felis vestibulum pretium. Morbi luctus justo vitae risus aliquet, ut lacinia dolor porta. Ut pulvinar pulvinar bibendum. Ut imperdiet ipsum sagittis dolor elementum finibus. Maecenas dignissim neque et nisl lacinia sollicitudin. Nam at nisi aliquam, bibendum lacus imperdiet, pulvinar erat. Duis rutrum nisl sed risus accumsan, vel eleifend velit faucibus. Quisque nisl justo, gravida vel leo ac, sagittis scelerisque nisl. Sed eu volutpat lacus. Phasellus ipsum erat, dapibus sit amet erat sed, venenatis varius mauris.
+    </p>
+    <p>
+      Integer sit amet libero quis nibh porta eleifend vel non diam. Mauris dapibus porta venenatis. Mauris vitae blandit nisi. Suspendisse non ex sapien. Quisque posuere ut purus nec interdum. Donec porta venenatis nisi, quis maximus mauris vehicula et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra ante elementum risus tempor, et laoreet augue consectetur. In elementum nec sem id pharetra.
+    </p>
+  </body>
+</html>
